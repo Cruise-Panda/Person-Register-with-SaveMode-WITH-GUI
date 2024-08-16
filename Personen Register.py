@@ -344,7 +344,7 @@ class datenbank_starten():
             self.optionals_keys.clear()
             self.optionals_values.clear()
             destroyframe = tk.Frame(self.neuer_eintrag_frame)
-            destroyframe.place(x=400, y=60, width=450, height=800)
+            destroyframe.place(x=400, y=60, width=450, height=370)
         
         # Funktion zur Erweiterung der Optional-Abfrage
         def update_optionals():
