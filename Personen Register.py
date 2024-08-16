@@ -247,77 +247,77 @@ class datenbank_starten():
             ueberschrift_suche_felder = tk.Label(self.hauptframe, text='Optionale Detailsuche :', relief='flat', font=('arial', 18))
             ueberschrift_suche_felder.place(x=870, y=60)
 
-            button_id_suche = tk.Label(self.hauptframe, text='ID:', font=('arial',12), anchor='w') # command fehlt
-            button_id_suche.place(width=100, height=30, x=870, y=130)
+            label_id_suche = tk.Label(self.hauptframe, text='ID:', font=('arial',12), anchor='w')
+            label_id_suche.place(width=100, height=30, x=870, y=130)
             self.id_suche = tk.Entry(self.hauptframe, font=('arial', 12))
             self.id_suche.place(width=150, height=30, x=975, y=130)
             self.id_suche.insert(0, '- Eingabe -')
             self.id_suche.bind("<Button-1>", self.clear_entry)
-            self.id_suche.bind('<Return>', self.id_suchen) # command fehlt
+            self.id_suche.bind('<Return>', self.id_suchen) 
 
-            button_vorname_suche = tk.Label(self.hauptframe, text='Vorname:', font=('arial',12), anchor='w')# command fehlt
-            button_vorname_suche.place(width=100, height=30, x=870, y=180)
+            label_vorname_suche = tk.Label(self.hauptframe, text='Vorname:', font=('arial',12), anchor='w')
+            label_vorname_suche.place(width=100, height=30, x=870, y=180)
             self.vorname_suche = tk.Entry(self.hauptframe, font=('arial', 12))
             self.vorname_suche.place(width=150, height=30, x=975, y=180)
             self.vorname_suche.insert(0, '- Eingabe -')
             self.vorname_suche.bind("<Button-1>", self.clear_entry)
-            self.vorname_suche.bind('<Return>', self.vorname_suchen) # command fehlt
+            self.vorname_suche.bind('<Return>', self.vorname_suchen)
 
-            button_nachname_suche = tk.Label(self.hauptframe, text='Nachname:', font=('arial',12), anchor='w')# command fehlt
-            button_nachname_suche.place(width=100, height=30, x=870, y=230)
+            label_nachname_suche = tk.Label(self.hauptframe, text='Nachname:', font=('arial',12), anchor='w')
+            label_nachname_suche.place(width=100, height=30, x=870, y=230)
             self.nachname_suche = tk.Entry(self.hauptframe, font=('arial', 12))
             self.nachname_suche.place(width=150, height=30, x=975, y=230)
             self.nachname_suche.insert(0, '- Eingabe -')
             self.nachname_suche.bind("<Button-1>", self.clear_entry)
-            self.nachname_suche.bind('<Return>',self.nachname_suchen ) # command fehlt
+            self.nachname_suche.bind('<Return>',self.nachname_suchen )
 
-            button_alter_suche = tk.Label(self.hauptframe, text='Alter:', font=('arial',12), anchor='w')# command fehlt
-            button_alter_suche.place(width=100, height=30, x=870, y=280)
+            label_alter_suche = tk.Label(self.hauptframe, text='Alter:', font=('arial',12), anchor='w')
+            label_alter_suche.place(width=100, height=30, x=870, y=280)
             self.alter_suche = tk.Entry(self.hauptframe, font=('arial', 12))
             self.alter_suche.place(width=150, height=30, x=975, y=280)
             self.alter_suche.insert(0, '- Eingabe -')
             self.alter_suche.bind("<Button-1>", self.clear_entry)
-            self.alter_suche.bind('<Return>', self.alter_suchen) # command fehlt
+            self.alter_suche.bind('<Return>', self.alter_suchen)
 
-            button_email_suche = tk.Label(self.hauptframe, text='E-Mail:', font=('arial',12), anchor='w')# command fehlt
-            button_email_suche.place(width=100, height=30, x=870, y=330)
+            label_email_suche = tk.Label(self.hauptframe, text='E-Mail:', font=('arial',12), anchor='w')
+            label_email_suche.place(width=100, height=30, x=870, y=330)
             self.email_suche = tk.Entry(self.hauptframe, font=('arial', 12))
             self.email_suche.place(width=150, height=30, x=975, y=330)
             self.email_suche.insert(0, '- Eingabe -')
             self.email_suche.bind("<Button-1>", self.clear_entry)
-            self.email_suche.bind('<Return>', self.email_suchen) # command fehlt
+            self.email_suche.bind('<Return>', self.email_suchen)
 
-            button_strasse_suche = tk.Label(self.hauptframe, text='Straße:', font=('arial',12), anchor='w')# command fehlt
-            button_strasse_suche.place(width=100, height=30, x=870, y=380)
+            label_strasse_suche = tk.Label(self.hauptframe, text='Straße:', font=('arial',12), anchor='w')
+            label_strasse_suche.place(width=100, height=30, x=870, y=380)
             self.strasse_suche = tk.Entry(self.hauptframe, font=('arial', 12))
             self.strasse_suche.place(width=150, height=30, x=975, y=380)
             self.strasse_suche.insert(0, '- Eingabe -')
             self.strasse_suche.bind("<Button-1>", self.clear_entry)
-            self.strasse_suche.bind('<Return>', self.strasse_suchen) # command fehlt
+            self.strasse_suche.bind('<Return>', self.strasse_suchen)
 
-            button_hausnummer_suche = tk.Label(self.hauptframe, text='Hausnummer:', font=('arial',12), anchor='w')# command fehlt
-            button_hausnummer_suche.place(width=100, height=30, x=870, y=430)
+            label_hausnummer_suche = tk.Label(self.hauptframe, text='Hausnummer:', font=('arial',12), anchor='w')
+            label_hausnummer_suche.place(width=100, height=30, x=870, y=430)
             self.hausnummer_suche = tk.Entry(self.hauptframe, font=('arial', 12))
             self.hausnummer_suche.place(width=150, height=30, x=975, y=430)
             self.hausnummer_suche.insert(0, '- Eingabe -')
             self.hausnummer_suche.bind("<Button-1>", self.clear_entry)
-            self.hausnummer_suche.bind('<Return>', self.hausnummer_suchen) # command fehlt
+            self.hausnummer_suche.bind('<Return>', self.hausnummer_suchen)
 
-            button_postleitzahl_suche = tk.Label(self.hauptframe, text='Postleitzahl:', font=('arial',12), anchor='w')# command fehlt
-            button_postleitzahl_suche.place(width=100, height=30, x=870, y=480)
+            label_postleitzahl_suche = tk.Label(self.hauptframe, text='Postleitzahl:', font=('arial',12), anchor='w')
+            label_postleitzahl_suche.place(width=100, height=30, x=870, y=480)
             self.postleitzahl_suche = tk.Entry(self.hauptframe, font=('arial', 12))
             self.postleitzahl_suche.place(width=150, height=30, x=975, y=480)
             self.postleitzahl_suche.insert(0, '- Eingabe -')
             self.postleitzahl_suche.bind("<Button-1>", self.clear_entry)
-            self.postleitzahl_suche.bind('<Return>', self.postleitzahl_suchen) # command fehlt
+            self.postleitzahl_suche.bind('<Return>', self.postleitzahl_suchen)
 
-            button_stadt_suche = tk.Label(self.hauptframe, text='Stadt:', font=('arial',12), anchor='w')# command fehlt
-            button_stadt_suche.place(width=100, height=30, x=870, y=530)
+            label_stadt_suche = tk.Label(self.hauptframe, text='Stadt:', font=('arial',12), anchor='w')
+            label_stadt_suche.place(width=100, height=30, x=870, y=530)
             self.stadt_suche = tk.Entry(self.hauptframe, font=('arial', 12))
             self.stadt_suche.place(width=150, height=30, x=975, y=530)
             self.stadt_suche.insert(0, '- Eingabe -')
             self.stadt_suche.bind("<Button-1>", self.clear_entry)
-            self.stadt_suche.bind('<Return>', self.stadt_suchen) # command fehlt   
+            self.stadt_suche.bind('<Return>', self.stadt_suchen) 
 
     # Programm - Ende
     def programm_ende(self):
